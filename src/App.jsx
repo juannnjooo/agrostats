@@ -1284,7 +1284,7 @@ export default function App() {
   function handleAdd(op) {
     setExtraOps(prev => [...prev, op]);
     setLastUpdated(new Date());
-    if (!APPS_SCRIPT_URL || APPS_SCRIPT_URL === "TU_URL_AQUI") return;
+    if (!APPS_SCRIPT_URL || APPS_SCRIPT_URL === "https://script.google.com/macros/s/AKfycbzA1mpz61MKGuHb_qjevSIGP6r9JbBEGVAyVM92bVk9VxuxoD8k4VIQV13qXg7c9FTedg/exec") return;
     setSyncing(true);
     fetch(APPS_SCRIPT_URL, {
       method: "POST",
