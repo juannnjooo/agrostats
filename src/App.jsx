@@ -1295,7 +1295,7 @@ export default function App() {
   function handleSaveLegajos(updated) {
     setLegajos(updated);
     setLastUpdated(new Date());
-    if (!APPS_SCRIPT_URL || APPS_SCRIPT_URL === "TU_URL_AQUI") return;
+    if (!APPS_SCRIPT_URL || APPS_SCRIPT_URL === "https://script.google.com/macros/s/AKfycbxneafM_CWrExrGUdkFy2LqLGMa4xa2Nr4wTFgkqyfSjW0PwJ1D3g8GIV9uy7K6VrQc1g/exec") return;
     setSyncing(true);
     fetch(APPS_SCRIPT_URL, {
       method: "POST",
